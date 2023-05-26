@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기2</title>
+    <link rel="stylesheet" href="./css/practice5.css">
+</head>
+<body>
+    <div>
+        <h1>레드향 주문하기</h1>
+        <form action="" method="">
+            <fieldset>
+                <legend><b>상품선택</b></legend>
+                <p><b>주문할 상품을 선택해주세요.</b></p>
+                <ul class="shipping">
+                    <li>
+                    <input type="checkbox"> 선물용 3kg
+                    <input type="number" max="5" min="1"> 개
+                    <small>(최대 5개)</small>
+                    </li>
+                    <li>
+                        <input type="checkbox"> 선물용 5kg
+                        <input type="number" max="3" min="1"> 개
+                        <small>(최대 3개)</small>
+                    </li>
+                    <li>
+                        <input type="checkbox"> 가정용 3kg
+                        <input type="number" max="5" min="1"> 개
+                        <small>(최대 5개)</small>
+                    </li> 
+                    <li>
+                        <input type="checkbox"> 가정용 5kg
+                        <input type="number" max="3" min="1"> 개
+                        <small>(최대 3개)</small>
+                    </li>      
+                </ul>
+                <p><b>포장 선택</b></p>
+                <ul>
+                    <li>
+                        <input type="radio" name="present" id="pakage">
+                        <label for="pakage">선물 포장</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="present" id="nopakage">
+                        <label for="nopakage">선물 포장 안 함</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>배송 정보</b></legend>
+                <ul class="shipping">
+                    <li>
+                        <label for="user-name">이름</label>
+                        <input type="text" id="user-name">
+                    </li>
+                    <li>
+                        <label for="address">배송주소</label>
+                        <input type="text" id="address">
+                    </li>
+                    <li>
+                        <label for="email">이메일</label>
+                        <input type="email" id="email">
+                    </li>
+                    <li>
+                        <label for="tel">연락처</label>
+                        <input type="tel" id="tel">
+                    </li>
+                    <li>
+                        <label for="d-day">배송지정</label>
+                        <input type="date" id="d-day">
+                        <small>(주문일로부터 최소 3일 이후)</small>
+                    </li>
+                    <li>
+                        <label for="memo">메모</label>
+                        
+                        <textarea></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <div>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+            </div>
+        </form>
+</body>
+</html>

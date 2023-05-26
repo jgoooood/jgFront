@@ -1,0 +1,21 @@
+#container {
+    width: 520px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px 40px;
+}
+
+ul>li>label { /*설문문항 왼쪽으로 정렬*/
+    width: 80px;
+    text-align: left;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0px;
+}
+
