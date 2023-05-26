@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 관련 스타일</title>
+    <style>
+        img {
+            width: 250px;
+        }
+        /*transform : 이미지동작*/
+        /*transition : 시간에 따라 스타일 속성이 바뀜 */
+        /* :hover 마우스를 대면 움직임 */
+        .trans1:hover {
+            /* x축(가로)로 움직임 */
+            transform: translateX(50px);
+            /*transition-duration : 동작시간 부여*/
+            transition-duration: 5s;
+            /*transition-delay : 효과지연시간 부여 */
+            transition-delay: 2s;
+        }
+        /* :active 클릭하면 움직임 */
+        .trans2:hover {
+            /* y축(세로)로 움직임 */
+            transform: translateY(50px);
+            transition-duration: 5s;
+        }
+        .trans3 {
+            transition-property: transform, width, height;
+            /*변형은 3초, 가로크기 5초, 세로크기 5초 동안 변하도록 각각 부여가능*/
+            transition-duration: 10s, 5s, 5s;
+        }
+        .trans3:hover {
+            /* x,y 축을 움직여 대각선 이동+크기확대 */
+            transform: translate(50px, -50px);
+            width: 300px;
+            height: 200px;
+        }   
+        .trans4:hover {
+            /* 확대하기 */
+            transform: scale(2);
+            padding-left: 70px;
+            transition-duration: 5s;
+        }
+        .trans5:hover {
+            /*360도 회전하기+트랜지션을 통해 5초 동안 회전 및 모서리 둥글어짐*/
+            transform: rotate(360deg);
+            transition-duration: 5s;
+            border-radius: 50px;
+        }
+        .trans6:hover {
+            /*뒤틀기*/
+            transform: skew(10deg, -10deg);
+            transition-duration: 5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>2차원 변형</h1>
+    <h3>좌우로 움직이기</h3>
+    <img src="../images/flower1.PNG" alt="꽃1" class="trans1">
+    <h3>위아래로 움직이기</h3>
+    <img src="../images/flower2.PNG" alt="꽃2" class="trans2">
+    <h3>대각선으로 움직이기</h3>
+    <img src="../images/flower3.PNG" alt="꽃3" class="trans3">
+    <h3>확대하기</h3>
+    <img src="../images/flower4.PNG" alt="꽃4" class="trans4">
+    <h3>회전하기</h3>
+    <img src="../images/flower5.PNG" alt="꽃5" class="trans5">
+    <h3>뒤틀기</h3>
+    <img src="../images/city1.PNG" alt="도시" class="trans6">
+</body>
+</html>
